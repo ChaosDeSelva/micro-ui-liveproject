@@ -1,0 +1,16 @@
+{
+    "name": "bootstrap",
+    "version": "1.0.0",
+    "description": "Micro UI",
+    "main": "src/js/index.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "build:watch": "parcel watch src/index.html"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "1.12.3"
+    }
+}
