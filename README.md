@@ -35,3 +35,5 @@ It builds `welcome` and `music` Micro Frontends first, then it runs in parallel 
 ## Credits
 
 1. Welcome image <https://www.teahub.io/photos/full/341-3412846_vintage-record-phone-background.jpg>
+2. 404 image <https://www.pngitem.com/pimgs/m/201-2019902_transparent-broken-clock-clipart-broken-record-hd-png.png>
+3. favicon <https://www.favicon.cc/?action=icon&file_id=350207>

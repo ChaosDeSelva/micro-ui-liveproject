@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-200 h-screen w-screen">
       <div style="background-color: black; position: relative; z-index: 1;">
-        <div class="h-screen bg-cover" style="background-image:url('./images/records-bkg.jpeg'); opacity: 0.3;">
+        <div class="h-screen bg-cover" :style="`background-image:url(${bkgImgUrl}); opacity: 0.3;`">
       </div>
       <!--Main-->
       <div style="position: absolute; top:0; width: 100%; z-index: 10;">
@@ -19,8 +19,14 @@
 </template>
 
 <script lang="ts">
+import bkgImgUrl from '@/assets/images/records-bkg.jpeg'
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Home',
+    setup: () => {
+    return {
+      bkgImgUrl,
+     }
+  }
 })
 </script>

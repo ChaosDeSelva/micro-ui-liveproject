@@ -32,13 +32,14 @@
                       </div>
                   </div>
               </div>
-              <div class="hidden md:block md:w-1/2 rounded-r-lg" style="background-image: url('./images/records-bkg.jpeg'); background-size: cover; background-position: center center;"></div>
+              <div class="hidden md:block md:w-1/2 rounded-r-lg" :style="`background-image: url(${bkgImgUrl}); background-size: cover; background-position: center center;`"></div>
           </div>
       </div>
   </div>
 </template>
 
 <script lang="ts">
+import bkgImgUrl from '@/assets/images/records-bkg.jpeg'
 import { ref, defineComponent } from 'vue'
 export default defineComponent({
   name: 'Signin',
@@ -54,6 +55,7 @@ export default defineComponent({
       email,
       password,
       onSubmit,
+      bkgImgUrl,
      }
   }
 })

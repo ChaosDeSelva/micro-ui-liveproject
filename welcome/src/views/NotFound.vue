@@ -2,7 +2,7 @@
     <div class="bg-gray-200 h-screen w-screen">
         <div class="flex flex-wrap content-start justify-center w-screen pt-48 md:pt-56 text-9xl md:text-18xl">
             <div>4</div>
-            <div><img src="images/404.jpeg" alt="0" class="image--size"></div>
+            <div><img src="@/assets/images/404.jpeg" alt="0" class="image--size"></div>
             <div>4</div>
         </div>
         <div class="flex flex-wrap content-start justify-center w-screen pt-12 md:pt-18">
