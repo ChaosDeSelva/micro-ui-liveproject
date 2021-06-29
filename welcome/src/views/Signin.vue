@@ -41,6 +41,21 @@
 <script lang="ts">
 import bkgImgUrl from '@/assets/images/records-bkg.jpeg'
 import { ref, defineComponent } from 'vue'
+
+interface Router {
+  navigateTo: Function
+}
+
+interface BootStrap {
+  router: Router
+}
+
+declare global {
+    interface Window {
+      bootstrap: BootStrap;
+    }
+}
+
 export default defineComponent({
   name: 'Signin',
   setup: () => {
@@ -48,7 +63,9 @@ export default defineComponent({
     const password = ref('')
 
     function onSubmit() {
-      console.log(email.value, password.value)
+      if (email.value && password.value) {
+        window.bootstrap.router.navigateTo('/play');
+      }
     }
 
     return {
