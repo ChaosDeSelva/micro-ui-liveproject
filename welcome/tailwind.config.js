@@ -1,3 +1,14 @@
+const plugin = require('tailwindcss/plugin');
+
+const capitalizeFirst = plugin(function ({ addUtilities }) {
+	const newUtilities = {
+		'.capitalize-first:first-letter': {
+			textTransform: 'uppercase',
+		},
+	};
+	addUtilities(newUtilities, ['responsive', 'hover']);
+});
+
 module.exports = {
 	purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	darkMode: false,
@@ -11,5 +22,5 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [capitalizeFirst],
 };
