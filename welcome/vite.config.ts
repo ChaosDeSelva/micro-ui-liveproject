@@ -5,8 +5,8 @@ export default {
   base: '',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [vue()]
+  plugins: [vue()],
 }
